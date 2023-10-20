@@ -10,41 +10,56 @@
 /* SOURCE CODE PRO 1 */
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 
-
+/* GERAL */
 * {
     margin: 0;
     padding: 0; 
 }
 
+body {
+    width: 100%;
+}
+
+/* NAVBAR */
 .navbar {
     display: flex;
-    width: 95vw;
-    padding: 3rem 1rem;
+    max-width: 88%;
+    padding: 3rem 5rem;
     align-items: center;
+    padding-left: 8rem;
     justify-content: space-between;
 }
 
+/* PARTE ESQUERDA DA NAVBAR */
 .left-side {
     display: flex;
     gap: 8rem;
     font-family:'Montserrat', sans-serif;
 }
 
+/* MAIN */
 .container {
-    width: 98.7vw;
+    position: relative;
+    width: 81.5rem;
+    max-width: 83rem;
     display: grid;
-    grid-template-columns: 48vw 48vw;
-    grid-template-rows: 50vh 30vh;
+    grid-template-columns: 47% 47%;
+    grid-template-rows: 32vh 32vh;
+    gap: 3rem;
+    background: url(/assets/img/linha.png) no-repeat center;
+    background-size: 45rem;
 }
 
+/* TITULO: GAROTOS DE PROGRAMA */
 .gpg {
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: 100;
     font-family: 'VT323', monospace;
 }
 
+/* TITULOS EM DESTAQUE */
 .title {
-    font-size: 5.098rem;
+    font-size: 6rem;
     font-family: 'M PLUS 1', sans-serif;
     background: rgb(95,63,148);
     background: radial-gradient(circle, rgba(95,63,148,1) 0%, rgba(96,0,255,1) 100%);
@@ -52,6 +67,7 @@
     -webkit-text-fill-color: transparent;
 }
 
+/* TEXTO EM DESTAQUE */
 .highlight {
     font-weight: 700;
     background: rgb(95,63,148);
@@ -60,31 +76,39 @@
     -webkit-text-fill-color: transparent;
 }
 
+/* PARAGRAFOS */
 .text {
-    font-size: 0.743rem;
+    font-size: 1rem;
     font-family: 'Source Code Pro', monospace;
 }
 
+/* PRIMEIRO TEXTO: CURSOS */
 .item-1 {
+    width: 90%;
+    padding-top: 1.5rem;
     display: flex;
     flex-direction: column;
     place-items: center;
 }
 
 .item-1 p {
-    width: 13.592rem;
+    width: 17rem;
+    
 }
 
+/* SEGUNDO TEXTO: CIBER EDUCAÇÃO 2023 */
 .item-2 {   
     width: 100%;
     height: 100%;
     display: flex;
-    font-size: 1.487rem;
+    font-size: 2.5rem;
     writing-mode: vertical-lr;
     justify-content: center;
     place-items: end;
+    font-family: "Source Code Pro";
 }
 
+/* DIV PARA O BOTÃO */
 .item-3 {
     font-family: 'Source Code Pro', monospace;
     display: flex;
@@ -92,23 +116,53 @@
     align-items: center;
 }
 
+/* BOTÃO DE ACESSAR */
 .button {
-    width: 11.735rem;
-    height: 3.823rem;
-    border-radius: 2.124rem;
+    width: 14rem;
+    height: 3rem;
+    border-radius: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     box-shadow: 0px 0px 33.98438px 0px rgba(0, 0, 0, 0.13);
+    background-color: #fff;
+    position: relative;
+    transition: all 150ms ease-in-out;
 }
 
+.button:hover {
+    transform: scale(1.1);
+}
+
+/* SETA DENTRO DO BOTÃO */
+.button img {
+    position: absolute;
+    right: 1rem;
+}
+
+/* DIV PARA O TEXTO: TECH */
 .item-4 {
+    width: 85%;
     display: flex;
     flex-direction: column;
     place-items: center;
 }
 
 .item-4 p {
-    width: 13.592rem;
+    width: 18rem;
+    align-self: flex-end;
+}
+
+/* IMAGEM DO GAROTO NO MEIO */
+#garoto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 99;
+    height: 30rem;
+    max-height: 35rem;
+    max-width: 35rem;
 }
