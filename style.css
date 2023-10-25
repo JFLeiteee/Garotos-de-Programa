@@ -57,14 +57,14 @@ body {
 
 /* TITULO: GAROTOS DE PROGRAMA */
 .gpg {
-    font-size: 2rem;
+    font-size: 4.2vmin;
     font-weight: 100;
     font-family: 'VT323', monospace;
 }
 
 /* TITULOS EM DESTAQUE */
 .title {
-    font-size: 6rem;
+    font-size: 12vmin;
     font-family: 'M PLUS 1', sans-serif;
     background: rgb(95,63,148);
     background: radial-gradient(circle, rgba(95,63,148,1) 0%, rgba(96,0,255,1) 100%);
@@ -83,7 +83,7 @@ body {
 
 /* PARAGRAFOS */
 .text {
-    font-size: 1rem;
+    font-size: 2.2vmin;
     font-family: 'Source Code Pro', monospace;
 }
 
@@ -97,7 +97,7 @@ body {
 }
 
 .item-1 p {
-    width: 17rem;
+    width: 50%;
 }
 
 /* SEGUNDO TEXTO: CIBER EDUCAÇÃO 2023 */
@@ -106,7 +106,7 @@ body {
     min-width: 15vw;
     height: 100%;
     display: flex;
-    font-size: 2.5rem;
+    font-size: 5.5vmin;
     writing-mode: vertical-lr;
     justify-content: center;
     place-items: end;
@@ -124,7 +124,8 @@ body {
 /* BOTÃO DE ACESSAR */
 .button {
     cursor: pointer;
-    width: 15rem;
+    max-width: 16rem;
+    min-width: 10rem;
     height: 3.3rem;
     border: 1px solid #d4d4d4;
     border-radius: 2.5rem;
@@ -150,6 +151,11 @@ body {
     right: 1rem;
 }
 
+/* TEXTO DENTRO DO BOTÃO */
+.button h2 {
+    font-size: 4.2vmin;
+}
+
 /* DIV PARA O TEXTO: TECH */
 .item-4 {
     width: 85%;
@@ -159,7 +165,7 @@ body {
 }
 
 .item-4 p {
-    width: 28rem;
+    width: 60%;
     align-self: flex-end;
 }
 
@@ -175,7 +181,8 @@ body {
     min-width: 25%;
 }
 
-@media screen and (max-width: 850px) and (max-height: 1100px) {
+/* RESPONSIVIDADE PARA TABLET */
+@media screen and (max-width: 1100px){
     .navbar {
         max-width: 100%;
         padding: 1.5rem 2.5rem;
@@ -191,7 +198,10 @@ body {
     }
 
     .item-4 p {
-        max-width: 17rem;
+        max-width: 15rem;
     }
 
+    .button {
+        width: 11rem;
+    }
 }
