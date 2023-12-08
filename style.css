@@ -124,7 +124,7 @@ body {
 /* BOTÃO DE ACESSAR */
 .button {
     cursor: pointer;
-    width: 16rem;
+    max-width: 16rem;
     min-width: 10rem;
     height: 3.3rem;
     border: 1px solid #d4d4d4;
